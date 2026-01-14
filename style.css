@@ -1,0 +1,167 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Gilroy";
+}
+
+html,
+body {
+    width: 100%;
+    height: 100%;
+}
+
+html {
+    background-color: var(--bg-primary-color);
+}
+
+main {
+    width: 100%;
+
+
+}
+
+main section {
+    width: 100%;
+    padding: var(--padding-2xl);
+    display: flex;
+    justify-content: center;
+    align-items: space-between;
+    gap : var(--gutter-xl);
+}
+
+main section .top {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: var(--gutter-md);
+}
+
+.btn {
+    padding: var(--padding-sm) var(--padding-md);
+    font-size: var(--font-size-md);
+    border-radius: var(--border-radius-md);
+    border: none;
+    cursor: pointer;
+    background-color: var(--bg-active-color);
+
+}
+
+#reset-btn {
+    background-color: rgb(184, 23, 23);
+    color: white;
+
+}
+
+#download-btn {
+    background-color: rgb(16, 145, 50);
+    color: white;
+
+}
+main section .left{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: var(--gutter-lg);
+    width: 70%;
+}
+main section .left .bottom{
+    display: flex;
+    border: 2px solid rgb(159, 155, 155);
+    width: 100%;
+    aspect-ratio: 5/2;
+    padding: var(--padding-md);
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: var(--gutter-md);
+    color: var(--text-secondary-color);
+    border-radius: var(--border-radius-md);
+    height: 700px;
+}
+main section .right {
+    width: 30%;
+    background-color: var(--bg-secondary-color);
+    color: white;
+    padding: var(--padding-lg);
+    border-radius: var(--border-radius-lg);
+}
+main section .right h2{
+    margin-bottom: var(--margin-lg);
+    font-size: 2rem;
+}
+main section .right .filter{
+    width: 100%;
+    
+
+}
+main section .right .filter label{
+    font-size: var(--font-size-md);
+    margin-bottom: var(--margin-sm);
+    display: block;
+}
+main section .right .filter input{
+    width: 100%;
+    margin-top: var(--margin-sm);
+    appearance: none;
+    height: 8px;
+    background-color: var(--bg-primary-color);
+}
+main section .right .filter input::-webkit-slider-thumb {
+    appearance: none;
+    width: 20px;
+    height: 20px;
+    background-color: var(--bg-active-color);
+    cursor: pointer;
+    border-radius: 50%;
+    background-color: rgba(255, 0, 0, 0.868);
+    border: none;
+    margin-top: -6px;
+
+}
+main section .right .filter input::-webkit-slider-runnable-track {
+    height: 8px;
+    border-radius: 4px;
+}
+main section .right .filters{
+    display: flex;
+    flex-direction: column;
+    gap: var(--gutter-md);
+    margin-bottom: var(--margin-lg);
+}
+main section .left .bottom .placeholder{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: var(--gutter-md);
+}
+canvas{
+    display: none;
+    max-width: 90%;
+    max-height: 85%;  
+}
+.formatSelection{
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: var(--gutter-md);
+}
+.formatSelection input[type="radio"]{
+    width: 16px;
+    height: 16px;
+    cursor: pointer;
+}
+
+.presets{
+    display: flex;
+    flex-wrap: wrap;
+    gap: var(--gutter-md);
+}
+
+#title{
+    color: white;
+    font-size: 2.3rem;
+}
